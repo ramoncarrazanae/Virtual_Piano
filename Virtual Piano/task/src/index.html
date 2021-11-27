@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Virtual Piano</title>
+    <style>
+        body {
+            background-color: darkgray;
+        }
+        .white-keys kbd{
+            position: relative;
+            background-color: white;
+            text-align: center;
+            display: inline-block;
+            border: black 1px solid;
+            width: 50px;
+            height: 200px;
+            margin-left: 0;
+            z-index: 1;
+        }
+        .container{
+
+            display: flex;
+            position: relative;
+            text-align: center;
+            top: 200px;
+            left: 450px;
+
+        }
+        .black-keys kbd {
+            z-index: 2;
+            background-color: black;
+            color: white;
+            text-align: center;
+            display: inline-block;
+            border: black 1px solid;
+            width: 30px;
+            height: 120px;
+            margin-left: 1px;
+            position: relative;
+            left: -350px;
+        }
+        #keyE{
+            left: -330px;
+        }
+        #keyT {
+            left: -255px;
+        }
+        #keyU {
+            left: -218px;
+        }
+        #keyY {
+            left: -236px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+<div class="white-keys">
+<kbd id="keyA">A</kbd>
+<kbd id="keyS">S</kbd>
+<kbd id="keyD">D</kbd>
+<kbd id="keyF">F</kbd>
+<kbd id="keyG">G</kbd>
+<kbd id="keyH">H</kbd>
+<kbd id="keyJ">J</kbd>
+
+</div>
+<div class="black-keys">
+    <kbd id = "keyW">W</kbd>
+    <kbd id = "keyE">E</kbd>
+    <kbd id = "keyT">T</kbd>
+    <kbd id = "keyY">Y</kbd>
+    <kbd id = "keyU">U</kbd>
+</div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
